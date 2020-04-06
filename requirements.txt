@@ -1,7 +1,6 @@
 flask
 gunicorn
 numpy
-shutil
 pillow
 random
 wordcloud
