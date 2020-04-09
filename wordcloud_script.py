@@ -49,12 +49,13 @@ def wordcloud(file):
                 mask = love_img_arr,
                 min_font_size = 10).generate(text_file) 
 
-    foldername = "to_save" + str(int(random() * 10000000000))
+    # foldername = "to_save" + str(int(random() * 10000000000))
     filename = "generated_wordcloud" + str(int(random() * 10000000000)) + ".png"
 
-    os.mkdir(foldername)
-    wordcloud.to_file(foldername + '/' + filename)
+    # os.mkdir(foldername)
+    # wordcloud.to_file(foldername + '/' + filename)
+    wordcloud.to_file(filename)
 
 
-
-    return foldername, filename
+    return filename
+    # return foldername, filename
